@@ -40,6 +40,10 @@ const config: HardhatUserConfig = {
       url: "https://rpc.scroll.io/" || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    "holesky": {
+      url: "https://1rpc.io/holesky",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   paths: {
     sources: "./contracts",
